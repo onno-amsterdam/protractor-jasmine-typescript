@@ -7,7 +7,7 @@ export class MenuLeft {
     public readonly table: ElementFinder = this.rootElement.$('table');
 
     // initiate page object - menuLet has menuItems
-    public readonly menuItem = new MenuItem(this.rootElement);
+    public readonly menuItem = new MenuItem(this.table);
             
     constructor(public readonly rootElement = $('.menuLeftContainer')) {}
 }
