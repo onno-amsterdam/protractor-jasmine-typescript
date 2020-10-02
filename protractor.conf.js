@@ -1,14 +1,20 @@
 const path = require('path');
 const { SpecReporter } = require('jasmine-spec-reporter');
 const jasmineSpecReporterConfig = require('./config/jasmine-reporters.config');
+const chromeConfig = require('./config/chrome.config');
 
 const localConfig = {
     framework: 'jasmine',
-    seleniumAddress: 'http://localhost:4444/wd/hub',
+    
+    // config to run the webdriver without first starting it
+    capabilities: chromeConfig.capabilities,
+    chromeDriver: chromeConfig.chromeDriver,
+    directConnect: true,
+    
     specs: ['specs/**/*.ts'],
     // baseUrl should have the file protocol if test pages are stored locally
     // when using browser.get in the tests you only have pass in the path relative to the baseUrl
-    baseUrl: 'file://C:/Users/ovanp/Documents/Development/Projects/protractor-jasmine-typescript/app',
+    baseUrl: 'http://localhost:8081',
     // execute the onPrepare function
     onPrepare,
   };
