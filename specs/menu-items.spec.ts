@@ -17,8 +17,8 @@ describe('[MENU ITEMS] in the left menu on the homepage;', async () => {
             }
     });
 
-    it('WHEN the menu items are shown in the left menu; ' + 
-        'THEN the menu-items in the left menu have text;', async () => {
+    it('WHEN the menu items are shown in the left menu ' + 
+        'THEN the menu-items in the left menu have text', async () => {
             const expectedText = [];
             expectedText.push({header:'Item 1', text:'Content of 1'});
             expectedText.push({header:'Item 2', text:'Content of 2'});
@@ -62,7 +62,7 @@ describe('[MENU ITEMS] in the left menu on the homepage;', async () => {
     });
 
     it('WHEN the menu items are shown in the left menu; ' + 
-        'THEN  the menu items of in the left menu have the attributes; ', async () => {
+        'THEN  the menu items of in the left menu have the attributes', async () => {
             const expectedAttributes = [];
             expectedAttributes.push({attribute:'Type', value:'a'});
             expectedAttributes.push({attribute:'Value', value:'b'});

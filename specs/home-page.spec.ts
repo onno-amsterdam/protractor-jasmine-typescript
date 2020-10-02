@@ -8,23 +8,28 @@ describe('[HOMEPAGE] functionality on the homepage', async () => {
         browser.get(browser.baseUrl);
     });
 
-    it('homepage shows a header navigation bar', async () => {
+    it('WHEN homepage is opened' + 
+        'THEN a header navigation bar is shown', async () => {
         expect(homepage.header.headerTitle.getText()).toMatch('Header Container');
     });
 
-    it('homepage shows a footer bar', async () => {
+    it('WHEN homepage is opened' + 
+        'THEN a footer bar is shown', async () => {
         expect(homepage.footer.headerTitle.getText()).toMatch('Footer Container');
     });
 
-    it('homepage shows a left menu', async () => {
+    it('WHEN homepage is opened' + 
+        'THEN a left menu is shown', async () => {
         expect(homepage.menuLeft.headerTitle.getText()).toMatch('Menu Left Container');
     });
 
-    it('homepage shows a area center', async () => {
+    it('WHEN homepage is opened' + 
+        'THEN a area center is shown', async () => {
         expect(homepage.areaCenter.headerTitle.getText()).toMatch('Area Center Container');
     });
 
-    it('homepage shows a right menu', async () => {
+    it('WHEN homepage is opened' + 
+        'THEN a right menu is shown', async () => {
         expect(homepage.menuRight.headerTitle.getText()).toMatch('Menu Right Container');
     });
 }); 

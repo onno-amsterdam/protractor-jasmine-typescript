@@ -18,7 +18,7 @@ describe('[DELAYED ACTIONS] in the Menu Right container', async () => {
     });
     
     it('WHEN I select the remove element option; ' +  
-        'THEN the element in the Area Center container is removed;', async () => {
+        'THEN the element in the Area Center container is removed', async () => {
         // select the option
         await menuRight.delayedActions.removeElementOption.click();
 
@@ -30,7 +30,7 @@ describe('[DELAYED ACTIONS] in the Menu Right container', async () => {
     });
     
     it('WHEN I select the add element option; ' + 
-        'THEN the element is added to the Area Center container;', async () => {
+        'THEN the element is added to the Area Center container', async () => {
         // select the option
         await menuRight.delayedActions.addElementOption.click();
 
@@ -42,7 +42,7 @@ describe('[DELAYED ACTIONS] in the Menu Right container', async () => {
     });
     
     it('WHEN I select the Show Alert option; ' + 
-        'THEN I see the browser shows an alert;', async () => {
+        'THEN I see the browser shows an alert', async () => {
         // select the option
         await menuRight.delayedActions.showAlertOption.click();
 

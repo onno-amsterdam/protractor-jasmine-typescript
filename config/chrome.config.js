@@ -6,7 +6,7 @@ const chromeConfig = {
   capabilities: {
     browserName: 'chrome',
     chromeOptions: {
-      excludeSwitches: ['enable-automation'],
+      excludeSwitches: ['enable-automation', 'enable-logging'],
       args:
         [
           '--disable-browser-side-navigation',

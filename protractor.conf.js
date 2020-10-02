@@ -20,6 +20,11 @@ const localConfig = {
     // baseUrl should have the file protocol if test pages are stored locally
     // when using browser.get in the tests you only have pass in the path relative to the baseUrl
     baseUrl: 'http://localhost:8081',
+    
+    params: {
+      jasmineSpecCounter: 0,
+    },
+
     // execute the onPrepare function
     onPrepare,
   };

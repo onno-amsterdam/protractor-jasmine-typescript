@@ -18,8 +18,8 @@ describe('[BLUE BUTTON] the blue button is available on the homepage', async () 
         catch {}
     });
 
-    it('WHEN I click the blue button in the menu-items; ', async () => {
-        'THEN I see the alert with the text for each menu-item;'
+    it('WHEN I click the blue button in the menu-items ', async () => {
+        'THEN I see the alert with the text for each menu-item'
         const menuItemsObject = [];
 
         menuItemsObject.push({menuItemHeader: 'Item 1', alertText: 'In menu-item 1'});
@@ -39,7 +39,7 @@ describe('[BLUE BUTTON] the blue button is available on the homepage', async () 
     });
 
     it('WHEN I click blue button located in the footer; ', async () => {
-        'THEN I see the alert with the text for the footer;'
+        'THEN I see the alert with the text for the footer'
         footer.blueButton.click();
         await waitForAlert();
         expect(getAlertText()).toMatch('In footerContainer');
