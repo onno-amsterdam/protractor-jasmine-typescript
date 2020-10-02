@@ -1,4 +1,5 @@
-import { ElementFinder, $, ElementArrayFinder, $$, by, element } from "protractor";
+import { AllureStepLogger } from "../../helpers/allure.helper";
+import { ElementFinder, $, ElementArrayFinder, by } from "protractor";
 import { BlueButton } from "../buttons/bluebutton.po";
 
 export class MenuItem {
@@ -20,6 +21,7 @@ export class MenuItem {
      * 
      * @param header string text of header
      */
+    @(AllureStepLogger`[BUTTON] clicking the blue button in menu-item by header`)
     public async clickBlueButton(header: string): Promise<void> {
         const menuItemsArr: ElementFinder[] = await this.menuItems;
         let index = 0;
@@ -38,6 +40,7 @@ export class MenuItem {
         return blueButton.click();
     };
 
+    @(AllureStepLogger`[MENU ITEMS] getting all the menu items`)
     public async getAllMenuItems(): Promise<ElementFinder[]> {
         return this.menuItems;
     } 

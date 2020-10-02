@@ -3,7 +3,7 @@ const jasmineSpecReporterConfig = {
     displaySuccessful: true,
     displayFailed: true,
     displayErrorMessages: false,
-    displayStacktrace: false,
+    displayStacktrace: 'none',
     displayNumber: true,
     displayDuration: true,
   },

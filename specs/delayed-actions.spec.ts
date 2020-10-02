@@ -12,8 +12,10 @@ describe('[DELAYED ACTIONS] in the Menu Right container', async () => {
     });
 
     afterAll(async () => {
-        await browser.switchTo().alert().dismiss();
-    })
+        try { 
+            await browser.switchTo().alert().dismiss() }
+        catch {}
+    });
     
     it('WHEN I select the remove element option; ' +  
         'THEN the element in the Area Center container is removed;', async () => {

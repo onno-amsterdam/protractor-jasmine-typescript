@@ -4,12 +4,18 @@ import { waitForAlert } from '../helpers/ec.helpers';
 import { browser } from 'protractor';
 
 
-describe('', async () => {
+describe('[BLUE BUTTON] the blue button is available on the homepage', async () => {
     const menuLeft = new HomePage().menuLeft; 
     const footer = new HomePage().footer;
 
     beforeEach(async () => {
         browser.get(browser.baseUrl);
+    });
+
+    afterAll(async () => {
+        try { 
+            await browser.switchTo().alert().dismiss() }
+        catch {}
     });
 
     it('WHEN I click the blue button in the menu-items; ', async () => {
@@ -32,7 +38,7 @@ describe('', async () => {
         }
     });
 
-    fit('WHEN I click blue button located in the footer; ', async () => {
+    it('WHEN I click blue button located in the footer; ', async () => {
         'THEN I see the alert with the text for the footer;'
         footer.blueButton.click();
         await waitForAlert();
