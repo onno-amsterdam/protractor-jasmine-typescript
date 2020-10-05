@@ -3,7 +3,7 @@ const log4js = require('log4js');
 const path = require('path');
 const AllureReporter = require('jasmine-allure-reporter');
 
-const allureResultsPath = path.join('./out-tsc/e2e/allure-xml-report');
+const allureResultsPath = path.join('./allure-xml-report');
 const jasmineSpecReporterConfig = require('./config/jasmine-reporters.config');
 const chromeConfig = require('./config/chrome.config');
 const log4jsConfig = require('./config/log4js');

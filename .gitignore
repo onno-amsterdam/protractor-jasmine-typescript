@@ -1,2 +1,6 @@
+# common
 node_modules
-out-tsc
+
+# reporting
+allure-report
+allure-xml-report
