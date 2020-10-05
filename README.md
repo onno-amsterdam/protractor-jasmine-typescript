@@ -1,4 +1,4 @@
-# Project Title
+# PROTRACTOR-JASMINE-TYPESCRIPT
 
 A starter kit for an protractor-jasmine-typescript e2e test project.
 
