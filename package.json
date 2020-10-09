@@ -4,7 +4,8 @@
   "description": "This is a starter project for testing with Protractor & Jasmine written in Typescript",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "protractor protractor.conf.js",
+    "wd:update": "node node_modules/protractor/bin/webdriver-manager update"
   },
   "repository": {
     "type": "git",
