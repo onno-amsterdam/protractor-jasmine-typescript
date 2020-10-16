@@ -51,6 +51,7 @@ async function onPrepare() {
   await browser.manage().timeouts().implicitlyWait(3000);
   
   // the reporter below allows for the logs of the test execution to display in the console
+  jasmine.getEnv().clearReporters();
   jasmine.getEnv().addReporter(new SpecReporter(jasmineSpecReporterConfig));
   
   jasmine.getEnv().addReporter({

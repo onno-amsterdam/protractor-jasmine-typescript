@@ -1,5 +1,9 @@
 const log4js = require('log4js');
 
+/**
+ * Configuration for the App Logger;
+ */
+
 module.exports = () => {
   log4js.configure({
     appenders: {
