@@ -4,3 +4,4 @@ node_modules
 # reporting
 allure-report
 allure-xml-report
+./out-tsc/*

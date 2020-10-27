@@ -1,0 +1,42 @@
+[32m[2020-10-15 18:24:21] [39m    [MENU ITEMS] getting all the menu items
+[32m[2020-10-15 18:24:22] [39m    [BUTTON] clicking the blue button in menu-item by header
+[32m[2020-10-15 18:24:22] [39m    [BUTTON] clicking the blue button
+[32m[2020-10-15 18:24:22] [39m    [ALERT] getting the alert text from
+[32m[2020-10-15 18:24:22] [39m    [ALERT] closing the alert
+[32m[2020-10-15 18:24:22] [39m    [BUTTON] clicking the blue button in menu-item by header
+[32m[2020-10-15 18:24:22] [39m    [BUTTON] clicking the blue button
+[32m[2020-10-15 18:24:22] [39m    [ALERT] getting the alert text from
+[32m[2020-10-15 18:24:22] [39m    [ALERT] closing the alert
+[32m[2020-10-15 18:24:22] [39m    [BUTTON] clicking the blue button in menu-item by header
+[32m[2020-10-15 18:24:22] [39m    [BUTTON] clicking the blue button
+[32m[2020-10-15 18:24:22] [39m    [ALERT] getting the alert text from
+[32m[2020-10-15 18:24:22] [39m    [ALERT] closing the alert
+[32m[2020-10-15 18:24:22] [39m    [BUTTON] clicking the blue button in menu-item by header
+[32m[2020-10-15 18:24:22] [39m    [BUTTON] clicking the blue button
+[32m[2020-10-15 18:24:23] [39m    [ALERT] getting the alert text from
+[32m[2020-10-15 18:24:23] [39m    [ALERT] closing the alert
+[32m[2020-10-15 18:24:23] [39m    [BUTTON] clicking the blue button in menu-item by header
+[32m[2020-10-15 18:24:23] [39m    [BUTTON] clicking the blue button
+[32m[2020-10-15 18:24:23] [39m    [ALERT] getting the alert text from
+[32m[2020-10-15 18:24:23] [39m    [ALERT] closing the alert
+[32m[2020-10-15 18:24:23] [39m 1) TEST SCENARIO FINISHED: [BLUE BUTTON] the blue button is available on the homepage WHEN I click the blue button in the menu-items : PASSED
+[32m[2020-10-15 18:24:23] [39m    [BUTTON] clicking the blue button
+[32m[2020-10-15 18:24:23] [39m    [ALERT] getting the alert text from
+[32m[2020-10-15 18:24:23] [39m    [ALERT] closing the alert
+[32m[2020-10-15 18:24:23] [39m 2) TEST SCENARIO FINISHED: [BLUE BUTTON] the blue button is available on the homepage WHEN I click blue button located in the footer; : PASSED
+[32m[2020-10-15 18:24:28] [39m 3) TEST SCENARIO FINISHED: [DELAYED ACTIONS] in the Menu Right container WHEN I select the remove element option; THEN the element in the Area Center container is removed: PASSED
+[32m[2020-10-15 18:24:34] [39m 4) TEST SCENARIO FINISHED: [DELAYED ACTIONS] in the Menu Right container WHEN I select the add element option; THEN the element is added to the Area Center container: PASSED
+[32m[2020-10-15 18:24:39] [39m 5) TEST SCENARIO FINISHED: [DELAYED ACTIONS] in the Menu Right container WHEN I select the Show Alert option; THEN I see the browser shows an alert: PASSED
+[32m[2020-10-15 18:24:39] [39m 6) TEST SCENARIO FINISHED: [HOMEPAGE] functionality on the homepage WHEN homepage is openedTHEN a header navigation bar is shown: PASSED
+[32m[2020-10-15 18:24:39] [39m 7) TEST SCENARIO FINISHED: [HOMEPAGE] functionality on the homepage WHEN homepage is openedTHEN a footer bar is shown: PASSED
+[32m[2020-10-15 18:24:40] [39m 8) TEST SCENARIO FINISHED: [HOMEPAGE] functionality on the homepage WHEN homepage is openedTHEN a left menu is shown: PASSED
+[32m[2020-10-15 18:24:40] [39m 9) TEST SCENARIO FINISHED: [HOMEPAGE] functionality on the homepage WHEN homepage is openedTHEN a area center is shown: PASSED
+[32m[2020-10-15 18:24:40] [39m 10) TEST SCENARIO FINISHED: [HOMEPAGE] functionality on the homepage WHEN homepage is openedTHEN a right menu is shown: PASSED
+[32m[2020-10-15 18:24:40] [39m    [MENU ITEMS] getting all the menu items
+[32m[2020-10-15 18:24:40] [39m 11) TEST SCENARIO FINISHED: [MENU ITEMS] in the left menu on the homepage; WHEN the menu items are shown in the left menu; THEN each of the menu items has the class attribute menu-items: PASSED
+[32m[2020-10-15 18:24:40] [39m    [MENU ITEMS] getting all the menu items
+[32m[2020-10-15 18:24:41] [39m 12) TEST SCENARIO FINISHED: [MENU ITEMS] in the left menu on the homepage; WHEN the menu items are shown in the left menu THEN the menu-items in the left menu have text: PASSED
+[32m[2020-10-15 18:24:41] [39m    [MENU ITEMS] getting all the menu items
+[32m[2020-10-15 18:24:42] [39m 13) TEST SCENARIO FINISHED: [MENU ITEMS] in the left menu on the homepage; WHEN the menu items are shown in the left menu; THEN each menu item contains a icon element: PASSED
+[32m[2020-10-15 18:24:42] [39m    [MENU ITEMS] getting all the menu items
+[32m[2020-10-15 18:24:42] [39m 14) TEST SCENARIO FINISHED: [MENU ITEMS] in the left menu on the homepage; WHEN the menu items are shown in the left menu; THEN  the menu items of in the left menu have the attributes: PASSED
