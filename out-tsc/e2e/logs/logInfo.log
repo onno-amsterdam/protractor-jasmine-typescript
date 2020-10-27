@@ -40,3 +40,6 @@
 [32m[2020-10-15 18:24:42] [39m 13) TEST SCENARIO FINISHED: [MENU ITEMS] in the left menu on the homepage; WHEN the menu items are shown in the left menu; THEN each menu item contains a icon element: PASSED
 [32m[2020-10-15 18:24:42] [39m    [MENU ITEMS] getting all the menu items
 [32m[2020-10-15 18:24:42] [39m 14) TEST SCENARIO FINISHED: [MENU ITEMS] in the left menu on the homepage; WHEN the menu items are shown in the left menu; THEN  the menu items of in the left menu have the attributes: PASSED
+[32m[2020-10-27 10:33:50] [39m 1) TEST SCENARIO FINISHED: TEST pass: PASSED
+[32m[2020-10-27 10:33:51] [39m 2) TEST SCENARIO FINISHED: TEST fail: FAILED
+[32m[2020-10-27 10:33:51] [39m 3) TEST SCENARIO FINISHED: TEST pass: PASSED
