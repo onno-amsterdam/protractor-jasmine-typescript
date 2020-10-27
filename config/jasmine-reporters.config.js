@@ -1,17 +1,17 @@
 const jasmineSpecReporterConfig = {
   spec: {
-    displaySuccessful: true,
+    displaySuccessful: false,
     displayFailed: true,
-    displayErrorMessages: false,
-    displayStacktrace: 'none',
+    displayErrorMessages: true,
+    displayStacktrace: "none",
     displayNumber: true,
     displayDuration: true,
   },
   summary: {
     displaySuccessful: true,
     displayFailed: true,
-    displayErrorMessages: false,
-    displayStacktrace: 'pretty',
+    displayErrorMessages: true,
+    displayStacktrace: "none",
     displayNumber: true,
     displayDuration: true,
   },
