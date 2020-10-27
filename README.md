@@ -64,6 +64,71 @@ To open the report, run the command:
 $ allure open allure-report
 ```
 
+### Console Step Logger
+For debugging and the creation of bugs the steps executed in the test are logged to the console.
+
+This is how the console logger is added to this project:
+
+Add the dependencies 
+* [log4js](https://www.npmjs.com/package/log4js) 
+* [jamine-spec-reporter](https://www.npmjs.com/package/jasmine-spec-reporter)
+run command:
+```bash
+npm install --save-dev log4js
+npm install --save-dev jasmine-spec-reporter
+```
+
+Add the following configuration file to the project:
+````
+config/log4js.js
+jasmine-reporters.config.js
+````
+
+Add the following code to the top of the protractor.conf.js file:
+```javascript
+// logger dependencies
+const { SpecReporter } = require('jasmine-spec-reporter');
+const log4js = require('log4js');
+const log4jsConfig = require('./config/log4js');
+const jasmineSpecReporterConfig = require('./config/jasmine-reporters.config');
+```
+
+To log the jasmine tests and results to the console. Add the following to the onPrepare function in the protractor.conf.js file:
+```javascript
+// settings for browser logger;
+log4jsConfig.call();
+browser.logger = log4js.getLogger('APP_LOGGER');
+
+// the reporter below allows for the logs of the test execution to display in the console
+jasmine.getEnv().clearReporters();
+jasmine.getEnv().addReporter(new SpecReporter(jasmineSpecReporterConfig));
+
+jasmine.getEnv().addReporter({
+    specDone: result => {
+    if (result.status !== 'disabled' && result.status !== 'pending') {
+        browser.logger.info(
+        `${++browser.params.jasmineSpecCounter}) TEST SCENARIO FINISHED: ${
+            result.fullName
+        }: ${result.status.toUpperCase()}`,
+        );
+    }
+    },
+});
+```
+
+Now anywhere in your code you can add lines like:
+```javascript
+browser.logger.info('[PAGE OBJECT] this is happening in the test;');
+browser.logger.warn('[COMMAND] this is taking way too long;');
+browser.logger.error('[ERROR] this thing is completely broken;');
+browser.logger.fatal(`[THIS AREA] you can pass in variables ${variable}`);
+```
+
+When implementing this custom logger please consider the following:
+* add at least logger output as possible;
+* make sure it's helpfull for debugging;
+* it should be able to be copy pasted as steps in a bug;
+
 ## Built With
 
 * [NodeJs](https://nodejs.org/en/) - Javascript Runtime Engine
