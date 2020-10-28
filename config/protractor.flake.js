@@ -9,6 +9,6 @@ protractorFlake({
   nodeBin: 'node',
   protractorArgs: protractorArgs,
   displayStacktrace: 'all'
-}, (status) => {
+  }, (status) => {
   process.exit(status);
 });

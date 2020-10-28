@@ -25,6 +25,13 @@ const localConfig = {
       jasmineSpecCounter: 0,
     },
 
+    jasmineNodeOpts: {
+      showColors: true,
+      defaultTimeoutInterval: 30000,
+      //realtimeFailure: true,
+      print: function() {},
+    },
+
     // execute functions
     onPrepare,
     onComplete,
