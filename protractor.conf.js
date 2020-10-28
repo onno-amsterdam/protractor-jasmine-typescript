@@ -16,7 +16,7 @@ const localConfig = {
     chromeDriver: chromeConfig.chromeDriver,
     directConnect: true,
     
-    specs: ['specs/temp.spec.ts'],
+    specs: ['specs/**/*.ts'],
     // baseUrl should have the file protocol if test pages are stored locally
     // when using browser.get in the tests you only have pass in the path relative to the baseUrl
     baseUrl: 'http://localhost:8081',
@@ -25,8 +25,9 @@ const localConfig = {
       jasmineSpecCounter: 0,
     },
 
-    // execute the onPrepare function
+    // execute functions
     onPrepare,
+    onComplete,
   };
 
 exports.config = localConfig;
@@ -85,4 +86,9 @@ function configureAllureScreenshots() {
     }
     return originalAddExpectationResult.apply(this, arguments);
   };
+}
+
+async function onComplete() {
+  await browser.driver.close();
+  await browser.driver.quit();
 }
